@@ -9,7 +9,7 @@ FROM node:lts-alpine
 # # RUN chown -R node /usr/src/app
 # RUN chown -R node /opt/app
 # USER node
-CMD npm run build; serve -s build -l 3032
+CMD npm run build ; serve -s build -l 3030
 
 # FROM nginx:1.17.1-alpine
 # COPY nginx.conf /etc/nginx/nginx.conf
