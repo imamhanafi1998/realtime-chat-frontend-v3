@@ -5,7 +5,7 @@ FROM node:lts-alpine
 # COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 # RUN npm install --production && npm install -g serve && mv node_modules ../
 # COPY . .
-# EXPOSE 3032
+EXPOSE 3030
 # # RUN chown -R node /usr/src/app
 # RUN chown -R node /opt/app
 # USER node
