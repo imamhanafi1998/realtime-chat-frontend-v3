@@ -5,7 +5,7 @@ WORKDIR /opt/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production && mv node_modules ../
 COPY . .
-EXPOSE 3000
+EXPOSE 3032
 # RUN chown -R node /usr/src/app
 RUN chown -R node /opt/app
 USER node
