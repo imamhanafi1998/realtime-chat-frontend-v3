@@ -18,6 +18,6 @@
 FROM node:lts-alpine
 WORKDIR /opt/app
 COPY build ./
-RUN npm install --production && npm install -g serve && mv node_modules ../
+RUN npm install -g serve && npm install --production && mv node_modules ../
 EXPOSE 3030
 CMD "serve -s build -l 3030"
